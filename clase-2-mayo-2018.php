@@ -9,7 +9,7 @@ $db = "nuevabase";
 var_dump(PDO::getAvailableDrivers());
 try
 {
-  $objetoPDO = new PDO("mysql:host=$server;dbname=$nombreBase",$usuario,$pass);
+  $objetoPDO = new PDO("mysql:host=$server;dbname=$db",$user,$pass);
 }
 catch(PDOException $zzz)
 {
